@@ -12,7 +12,7 @@
     "database:init:prod": "node dist/database/scripts/setup-db.js && yarn database:migrate:prod --force --include-slow",
     "database:migrate:prod": "node dist/command/command run-instance-commands",
     "clickhouse:migrate:prod": "node dist/database/clickHouse/migrations/run-migrations.js",
-    "typeorm": "../../node_modules/typeorm/.bin/typeorm"
+    "typeorm": "../../node_modules/typeorm/.bin/typeorm"h
   },
   "dependencies": {
     "@ai-sdk/amazon-bedrock": "^4.0.116",
@@ -110,7 +110,7 @@
     "graphql-subscriptions": "2.0.0",
     "graphql-tag": "2.12.6",
     "graphql-type-json": "0.3.2",
-    "graphql-upload": "16.0.2",
+    "graphql-upload": "^15.0.2",
     "graphql-yoga": "4.0.5",
     "html-to-text": "^9.0.5",
     "imapflow": "1.4.2",
