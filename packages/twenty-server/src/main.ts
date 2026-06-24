@@ -7,7 +7,7 @@ import { inspect } from 'util';
 import bytes from 'bytes';
 import { useContainer } from 'class-validator';
 import session from 'express-session';
-import graphqlUploadExpress from 'graphql-upload/graphqlUploadExpress.mjs';
+
 
 import { NodeEnvironment } from 'src/engine/core-modules/twenty-config/interfaces/node-environment.interface';
 
@@ -86,6 +86,7 @@ const bootstrap = async () => {
   app.useBodyParser('text', { type: 'text/plain', limit: '1024kb' });
 
   // Graphql file upload
+    const { default: graphqlUploadExpress } = await import('graphql-upload/graphqlUploadExpress.mjs');
   app.use(
     '/graphql',
     graphqlUploadExpress({
