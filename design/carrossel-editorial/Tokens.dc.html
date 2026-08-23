@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Archivo+Black&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; }
+  a { color: #C4F82A; }
+  a:hover { color: #a9d81f; }
+</style>
+</helmet>
+<div style="position:relative;width:1200px;height:1500px;background:#F2F1ED;overflow:hidden;font-family:'Archivo',Helvetica,Arial,sans-serif;box-sizing:border-box;padding:64px;">
+
+  <div style="font-size:20px;letter-spacing:0.18em;color:#8A8F86;font-weight:500;">01 — cor</div>
+  <h2 style="margin:12px 0 32px 0;font-family:'Archivo Black',sans-serif;font-weight:900;font-size:44px;color:#141613;">Tokens de cor</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(5, minmax(0, 1fr));gap:24px;">
+
+    <div>
+      <div style="height:140px;background:#2F3B2A;"></div>
+      <div style="margin-top:12px;font-size:16px;color:#141613;font-weight:700;">--grade</div>
+      <div style="font-size:14px;color:#8A8F86;">#2F3B2A</div>
+      <div style="font-size:14px;color:#8A8F86;margin-top:4px;">tom da grade sobre foto</div>
+    </div>
+
+    <div>
+      <div style="height:140px;background:#C4F82A;"></div>
+      <div style="margin-top:12px;font-size:16px;color:#141613;font-weight:700;">--acento</div>
+      <div style="font-size:14px;color:#8A8F86;">#C4F82A</div>
+      <div style="font-size:14px;color:#8A8F86;margin-top:4px;">grifo, nunca fundo</div>
+    </div>
+
+    <div>
+      <div style="height:140px;background:#F2F1ED;border:1px solid rgba(20,22,19,0.15);box-sizing:border-box;"></div>
+      <div style="margin-top:12px;font-size:16px;color:#141613;font-weight:700;">--claro</div>
+      <div style="font-size:14px;color:#8A8F86;">#F2F1ED</div>
+      <div style="font-size:14px;color:#8A8F86;margin-top:4px;">texto sobre foto</div>
+    </div>
+
+    <div>
+      <div style="height:140px;background:#141613;"></div>
+      <div style="margin-top:12px;font-size:16px;color:#141613;font-weight:700;">--escuro</div>
+      <div style="font-size:14px;color:#8A8F86;">#141613</div>
+      <div style="font-size:14px;color:#8A8F86;margin-top:4px;">texto sobre --acento</div>
+    </div>
+
+    <div>
+      <div style="height:140px;background:#8A8F86;"></div>
+      <div style="margin-top:12px;font-size:16px;color:#141613;font-weight:700;">--neutro-1</div>
+      <div style="font-size:14px;color:#8A8F86;">#8A8F86</div>
+      <div style="font-size:14px;color:#8A8F86;margin-top:4px;">kicker, numerador</div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:40px;display:flex;height:56px;">
+    <div style="width:70%;background:#2F3B2A;display:flex;align-items:center;justify-content:center;color:#F2F1ED;font-size:16px;">foto gradada — 70%</div>
+    <div style="width:25%;background:#141613;display:flex;align-items:center;justify-content:center;color:#F2F1ED;font-size:16px;">tipografia clara — 25%</div>
+    <div style="width:5%;background:#C4F82A;"></div>
+  </div>
+  <p style="margin:16px 0 0 0;font-size:16px;color:#8A8F86;max-width:820px;">O acento nunca ocupa área grande — ele é grifo, não fundo. Texto principal sobre foto exige overlay escuro na área de leitura (gradiente de --grade, 0%→70%), contraste mínimo 4.5:1 aferido na região mais clara da foto.</p>
+
+  <div style="margin-top:56px;font-size:20px;letter-spacing:0.18em;color:#8A8F86;font-weight:500;">02 — tipografia</div>
+  <h2 style="margin:12px 0 32px 0;font-family:'Archivo Black',sans-serif;font-weight:900;font-size:44px;color:#141613;">Duas famílias, contraste alto</h2>
+
+  <div style="display:flex;flex-direction:column;gap:0px;">
+
+    <div style="display:flex;align-items:baseline;gap:32px;padding:20px 0;border-bottom:1px solid rgba(20,22,19,0.12);">
+      <div style="width:220px;font-size:15px;color:#8A8F86;letter-spacing:0.08em;">display · 900 · 130–180px</div>
+      <div style="font-family:'Archivo Black',sans-serif;font-weight:900;font-size:72px;line-height:0.9;color:#141613;">Aa editorial</div>
+    </div>
+
+    <div style="display:flex;align-items:baseline;gap:32px;padding:20px 0;border-bottom:1px solid rgba(20,22,19,0.12);">
+      <div style="width:220px;font-size:15px;color:#8A8F86;letter-spacing:0.08em;">display itálico · 400</div>
+      <div style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:72px;line-height:0.9;color:#141613;">Aa editorial</div>
+    </div>
+
+    <div style="display:flex;align-items:baseline;gap:32px;padding:20px 0;border-bottom:1px solid rgba(20,22,19,0.12);">
+      <div style="width:220px;font-size:15px;color:#8A8F86;letter-spacing:0.08em;">kicker · 500 · 22px</div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:500;font-size:22px;letter-spacing:0.18em;color:#141613;">sua marca · para outro · patamar</div>
+    </div>
+
+    <div style="display:flex;align-items:baseline;gap:32px;padding:20px 0;border-bottom:1px solid rgba(20,22,19,0.12);">
+      <div style="width:220px;font-size:15px;color:#8A8F86;letter-spacing:0.08em;">corpo · 400 · 34–40px</div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:400;font-size:36px;line-height:1.25;color:#141613;">O problema nunca foi o layout.</div>
+    </div>
+
+    <div style="display:flex;align-items:baseline;gap:32px;padding:20px 0;">
+      <div style="width:220px;font-size:15px;color:#8A8F86;letter-spacing:0.08em;">micro / numerador · 24px</div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:500;font-size:24px;color:#141613;">03/08</div>
+    </div>
+
+  </div>
+
+  <p style="margin:32px 0 0 0;font-size:16px;color:#8A8F86;max-width:900px;">Pares sugeridos: <strong style="color:#141613;">Archivo Black + Instrument Serif Italic</strong> (usado aqui) — alternativa mais dramática: Anton + Playfair Display Italic. Em toda headline, 1 a 2 palavras trocam para o itálico serifado: a palavra que carrega a tensão da frase, não o substantivo genérico.</p>
+
+</div>
+</x-dc>
+</body>
+</html>

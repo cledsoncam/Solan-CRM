@@ -1,0 +1,27 @@
+{
+  "pages": [
+    { "id": "sistema", "name": "Sistema" },
+    { "id": "carrossel", "name": "Carrossel — template" }
+  ],
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1200, "h": 800, "page": "sistema" },
+    { "file": "Tokens.dc.html", "x": 1280, "y": 0, "w": 1200, "h": 1500, "page": "sistema" },
+    { "file": "Components.dc.html", "x": 0, "y": 920, "w": 1200, "h": 1650, "page": "sistema" },
+    { "file": "Rules.dc.html", "x": 1280, "y": 1620, "w": 1200, "h": 950, "page": "sistema" },
+
+    { "file": "Slide1.dc.html", "x": 0, "y": 0, "w": 1080, "h": 1350, "page": "carrossel" },
+    { "file": "Slide2.dc.html", "x": 1160, "y": 0, "w": 1080, "h": 1350, "page": "carrossel" },
+    { "file": "Slide3.dc.html", "x": 2320, "y": 0, "w": 1080, "h": 1350, "page": "carrossel" },
+    { "file": "Slide4.dc.html", "x": 3480, "y": 0, "w": 1080, "h": 1350, "page": "carrossel" },
+    { "file": "Slide5.dc.html", "x": 4640, "y": 0, "w": 1080, "h": 1350, "page": "carrossel" },
+    { "file": "Slide6.dc.html", "x": 5800, "y": 0, "w": 1080, "h": 1350, "page": "carrossel" },
+    { "file": "Slide7.dc.html", "x": 6960, "y": 0, "w": 1080, "h": 1350, "page": "carrossel" },
+    { "file": "Slide8.dc.html", "x": 8120, "y": 0, "w": 1080, "h": 1350, "page": "carrossel" }
+  ],
+  "annotations": [
+    { "id": "note-headline-1", "x": 0, "y": -140, "w": 480, "text": "Slide 1 — headline-invadida: a forma orgânica aqui é placeholder. Troque pelo recorte real do sujeito da foto passando na frente do texto.", "page": "carrossel" },
+    { "id": "note-headline-7", "x": 6960, "y": -140, "w": 480, "text": "Slide 7 — mesma lógica: recorte real substitui a forma orgânica placeholder.", "page": "carrossel" },
+    { "id": "note-fotos", "x": 0, "y": 1420, "w": 1080, "text": "Todos os fundos aqui são gradientes placeholder simulando a grade de cor. Substitua pelas fotos reais já tratadas (dessaturar 40–60%, puxar sombra/meio-tom pro --grade, escurecer 15–25%).", "page": "carrossel" }
+  ],
+  "launch": { "view": "canvas", "page": "sistema" }
+}

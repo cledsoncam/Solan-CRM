@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Archivo+Black&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; }
+  a { color: #C4F82A; }
+  a:hover { color: #a9d81f; }
+</style>
+</helmet>
+<div style="position:relative;width:1200px;height:1650px;background:#F2F1ED;overflow:hidden;font-family:'Archivo',Helvetica,Arial,sans-serif;box-sizing:border-box;padding:64px;">
+
+  <div style="font-size:20px;letter-spacing:0.18em;color:#8A8F86;font-weight:500;">04 — componentes de slide</div>
+  <h2 style="margin:12px 0 40px 0;font-family:'Archivo Black',sans-serif;font-weight:900;font-size:44px;color:#141613;">Seis peças, todo slide</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:32px;">
+
+    <div style="background:#141613;padding:32px;box-sizing:border-box;">
+      <div style="display:flex;justify-content:space-between;font-size:14px;letter-spacing:0.16em;color:#8A8F86;margin-bottom:20px;">
+        <span>sua marca</span><span>para outro</span><span>patamar</span>
+      </div>
+      <div style="font-family:'Archivo Black',sans-serif;font-weight:900;font-size:22px;color:#F2F1ED;">kicker</div>
+      <p style="margin:8px 0 0 0;font-size:16px;line-height:1.4;color:#8A8F86;">3 fragmentos, esquerda/centro/direita, formando uma frase única. Aparece em todo slide — é a assinatura.</p>
+    </div>
+
+    <div style="background:#2F3B2A;padding:32px;box-sizing:border-box;position:relative;overflow:hidden;height:210px;">
+      <div style="position:absolute;top:20px;left:40px;right:180px;font-family:'Archivo Black',sans-serif;font-weight:900;font-size:40px;line-height:0.9;color:#F2F1ED;">Mais <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;">fundo</span></div>
+      <div style="position:absolute;top:10px;right:40px;width:120px;height:220px;border-radius:48% 52% 44% 56% / 40% 44% 56% 60%;background:rgba(20,22,19,0.85);"></div>
+      <div style="position:absolute;bottom:16px;left:40px;font-family:'Archivo Black',sans-serif;font-weight:900;font-size:22px;color:#F2F1ED;">headline-invadida</div>
+    </div>
+
+    <div style="background:#141613;padding:32px;box-sizing:border-box;">
+      <span style="background:#C4F82A;color:#141613;padding:8px 16px;font-weight:700;font-size:22px;">grifo-acento</span>
+      <p style="margin:16px 0 0 0;font-size:16px;line-height:1.4;color:#8A8F86;">Caixa sólida em --acento, 2 a 4 palavras, nunca uma linha inteira. Máximo 2 por slide.</p>
+    </div>
+
+    <div style="background:#141613;padding:32px;box-sizing:border-box;">
+      <p style="margin:0;font-family:'Archivo',sans-serif;font-size:24px;line-height:1.25;color:#F2F1ED;">2 a 4 linhas, ancorado na base. Palavras-chave recebem <span style="background:#C4F82A;color:#141613;padding:2px 8px;">grifo</span> ou <span style="text-decoration:underline;text-decoration-color:#C4F82A;text-decoration-thickness:2px;text-underline-offset:4px;">sublinhado</span>.</p>
+      <div style="font-family:'Archivo Black',sans-serif;font-weight:900;font-size:22px;color:#F2F1ED;margin-top:16px;">bloco-corpo</div>
+    </div>
+
+    <div style="background:#141613;padding:32px;box-sizing:border-box;position:relative;height:150px;">
+      <div style="position:absolute;bottom:32px;right:32px;font-family:'Archivo',sans-serif;font-weight:500;font-size:24px;color:#8A8F86;">03/08</div>
+      <div style="position:absolute;bottom:32px;left:32px;font-family:'Archivo Black',sans-serif;font-weight:900;font-size:22px;color:#F2F1ED;">numerador</div>
+    </div>
+
+    <div style="background:#141613;padding:32px;box-sizing:border-box;">
+      <div style="display:inline-block;background:#C4F82A;color:#141613;padding:10px 18px;font-weight:700;font-size:22px;">@mktcomcled</div>
+      <div style="font-family:'Archivo Black',sans-serif;font-weight:900;font-size:22px;color:#F2F1ED;margin-top:16px;">assinatura</div>
+      <p style="margin:8px 0 0 0;font-size:16px;line-height:1.4;color:#8A8F86;">Slide final: @handle + CTA. Único slide onde --acento pode ocupar até 20% da área.</p>
+    </div>
+
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
